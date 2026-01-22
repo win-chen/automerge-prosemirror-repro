@@ -1,12 +1,10 @@
 import "./style.css";
 import { Repo } from "@automerge/automerge-repo";
 import { IndexedDBStorageAdapter } from "@automerge/automerge-repo-storage-indexeddb";
-import { BroadcastChannelNetworkAdapter } from "@automerge/automerge-repo-network-broadcastchannel";
 import { wireCreateDoc, wireLoadDoc } from "./wiring.ts";
 import "prosemirror-view/style/prosemirror.css";
 
 const repo = new Repo({
-  network: [new BroadcastChannelNetworkAdapter()],
   storage: new IndexedDBStorageAdapter(),
 });
 

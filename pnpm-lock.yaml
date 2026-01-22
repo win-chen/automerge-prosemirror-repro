@@ -11,9 +11,6 @@ importers:
       '@automerge/automerge-repo':
         specifier: ^2.5.1
         version: 2.5.1
-      '@automerge/automerge-repo-network-broadcastchannel':
-        specifier: ^2.5.1
-        version: 2.5.1
       '@automerge/automerge-repo-storage-indexeddb':
         specifier: ^2.5.1
         version: 2.5.1
@@ -50,9 +47,6 @@ importers:
         version: 7.3.1
 
 packages:
-
-  '@automerge/automerge-repo-network-broadcastchannel@2.5.1':
-    resolution: {integrity: sha512-htjVAPOzWvaal7jXkXhMBWW1OLHBAmGJp3fujdxgMmHa6/KUmhmHsn7VGvVqrU3vCfbfdu5PAupcla95AwlEbA==}
 
   '@automerge/automerge-repo-storage-indexeddb@2.5.1':
     resolution: {integrity: sha512-klyemjiwEn2+PW+NTjvBtjmykjJVoaBbQgk5P02jIgvAO7KH8OACldFzPrJdO0o6WAxkiOdtte8RHFKrDPkBlw==}
@@ -673,12 +667,6 @@ packages:
     resolution: {integrity: sha512-oyvsNH5pF2qkHmiHEMdWqc3OjDtoZOH2MTAI35r01f/ZQWOD+VLOiYqo65UgQET0XMA5s9eRm8fnsIo+82biEw==}
 
 snapshots:
-
-  '@automerge/automerge-repo-network-broadcastchannel@2.5.1':
-    dependencies:
-      '@automerge/automerge-repo': 2.5.1
-    transitivePeerDependencies:
-      - supports-color
 
   '@automerge/automerge-repo-storage-indexeddb@2.5.1':
     dependencies:

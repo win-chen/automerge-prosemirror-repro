@@ -26,6 +26,10 @@ export const initProseMirror = (
 
   let proseState = EditorState.create(editorConfig);
 
+  if (editorEntry._view) {
+    editorEntry._view.destroy();
+  }
+
   const view = new EditorView(editorEntry, {
     state: proseState,
     editable: () => true, // can be toggled for readonly
@@ -34,6 +38,8 @@ export const initProseMirror = (
       view.updateState(newState);
     },
   });
+
+  editorEntry._view = view;
 
   logOnChange(handle, proseState);
 };
