@@ -1,5 +1,7 @@
 Reproduction for: "ProseMirror doc doesn't match AutoMerge spans."
 
+`npm run dev`
+
 Steps:
 - Click "Create doc"
 - In the editor view where "hello" is shown, press enter
